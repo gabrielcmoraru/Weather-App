@@ -3,17 +3,48 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>GCM Random Quote Generator</title>
-		<link rel="stylesheet" href="styles.css">
+		<title>Weather App</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<div class="container">
-		<div class="card card-primary">
+			<div class="row justify-content-md-center">
+				<div>
+					<img class="card-img-top img-responsive">
+				</div>
+				<div >
+					<div class="text-center">
+						<h1 class="card-title"></h1>
+						<h2 class="card-text"></h2>
+					</div>
+				</div>
+				</div>
+			<div class="row justify-content-md-center">
+				<div class="col-xs-6">
+				<div class="temperature">
+				</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="temperature-min"></div>
+					<div class="temperature-max"></div>
+					<button id="celsius" type="button" class="btn btn-lrg btn-outline-warning active">°C</button>
+					<button id="farenheit" type="button" class="btn btn-lrg btn-outline-warning">°F</button>
+				</div>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-xs" id="left">
+					<div class="wind"></div>
+					<div class="pressure"></div>
+				</div>
+				<div class="col-xs" id="right">
+					<div class="sunrise"></div>
+					<div class="sunset"></div>
+				</div>
+			</div>
 		</div>
-		<p class="weather"></p>
 		<script src="scripts.js" ></script>
 	</body>
 </html>
